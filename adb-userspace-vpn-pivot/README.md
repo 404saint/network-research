@@ -3,7 +3,6 @@
 ![Network Research](https://img.shields.io/badge/Network_Research-00BCD4?style=for-the-badge&logo=github&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ---
 
@@ -25,7 +24,7 @@ Key objectives:
 
 ## Architecture Diagram
 
-![Architecture Diagram](diagrams/architecture.svg)
+<img src="diagrams/architecture.svg" width="350">
 
 **High-level flow:**
 
