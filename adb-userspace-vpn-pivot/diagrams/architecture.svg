@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406pt" height="944pt" viewBox="0.00 0.00 405.83 944.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 940)">
+<title>ADB_VPN_Pivot</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-940 401.8253,-940 401.8253,4 -4,4"/>
+<!-- PC -->
+<g id="node1" class="node">
+<title>PC</title>
+<g id="a_node1"><a xlink:title="Desktop host running ADB and SOCKS client">
+<path fill="#f0f6ff" stroke="#666666" d="M135.6079,-936C135.6079,-936 11.797,-936 11.797,-936 5.797,-936 -.203,-930 -.203,-924 -.203,-924 -.203,-912 -.203,-912 -.203,-906 5.797,-900 11.797,-900 11.797,-900 135.6079,-900 135.6079,-900 141.6079,-900 147.6079,-906 147.6079,-912 147.6079,-912 147.6079,-924 147.6079,-924 147.6079,-930 141.6079,-936 135.6079,-936"/>
+<text text-anchor="middle" x="73.7025" y="-914.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">Linux Host / Windows Host</text>
+</a>
+</g>
+</g>
+<!-- SOCKS -->
+<g id="node2" class="node">
+<title>SOCKS</title>
+<path fill="#e6f3ff" stroke="#666666" d="M110.6074,-756C110.6074,-756 36.7975,-756 36.7975,-756 30.7975,-756 24.7975,-750 24.7975,-744 24.7975,-744 24.7975,-732 24.7975,-732 24.7975,-726 30.7975,-720 36.7975,-720 36.7975,-720 110.6074,-720 110.6074,-720 116.6074,-720 122.6074,-726 122.6074,-732 122.6074,-732 122.6074,-744 122.6074,-744 122.6074,-750 116.6074,-756 110.6074,-756"/>
+<text text-anchor="middle" x="73.7025" y="-741.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">SOCKS5h Proxy</text>
+<text text-anchor="middle" x="73.7025" y="-728.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">(127.0.0.1:1081)</text>
+</g>
+<!-- PC&#45;&gt;SOCKS -->
+<g id="edge1" class="edge">
+<title>PC-&gt;SOCKS</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M73.8253,-899.7501C73.8253,-899.7501 73.8253,-765.0306 73.8253,-765.0306"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="76.9754,-765.0306 73.8253,-756.0306 70.6754,-765.0307 76.9754,-765.0306"/>
+</g>
+<!-- ADB -->
+<g id="node3" class="node">
+<title>ADB</title>
+<path fill="#fff3e0" stroke="#666666" d="M382.1726,-756C382.1726,-756 299.0676,-756 299.0676,-756 293.0676,-756 287.0676,-750 287.0676,-744 287.0676,-744 287.0676,-732 287.0676,-732 287.0676,-726 293.0676,-720 299.0676,-720 299.0676,-720 382.1726,-720 382.1726,-720 388.1726,-720 394.1726,-726 394.1726,-732 394.1726,-732 394.1726,-744 394.1726,-744 394.1726,-750 388.1726,-756 382.1726,-756"/>
+<text text-anchor="middle" x="340.6201" y="-741.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">ADB TCP Forward</text>
+<text text-anchor="middle" x="340.6201" y="-728.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">(USB Tunnel)</text>
+</g>
+<!-- SOCKS&#45;&gt;ADB -->
+<g id="edge2" class="edge">
+<title>SOCKS-&gt;ADB</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M122.6593,-738C122.6593,-738 277.9314,-738 277.9314,-738"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="277.9315,-741.1501 286.9314,-738 277.9314,-734.8501 277.9315,-741.1501"/>
+<text text-anchor="middle" x="215.4099" y="-741" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">TCP tunnel</text>
+</g>
+<!-- AndroidProxy -->
+<g id="node4" class="node">
+<title>AndroidProxy</title>
+<path fill="#fff9e6" stroke="#666666" d="M386.0312,-576C386.0312,-576 295.209,-576 295.209,-576 289.209,-576 283.209,-570 283.209,-564 283.209,-564 283.209,-552 283.209,-552 283.209,-546 289.209,-540 295.209,-540 295.209,-540 386.0312,-540 386.0312,-540 392.0312,-540 398.0312,-546 398.0312,-552 398.0312,-552 398.0312,-564 398.0312,-564 398.0312,-570 392.0312,-576 386.0312,-576"/>
+<text text-anchor="middle" x="340.6201" y="-561.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">Android Local Proxy</text>
+<text text-anchor="middle" x="340.6201" y="-548.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">(SOCKS5)</text>
+</g>
+<!-- ADB&#45;&gt;AndroidProxy -->
+<g id="edge3" class="edge">
+<title>ADB-&gt;AndroidProxy</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M340.8253,-719.7501C340.8253,-719.7501 340.8253,-585.0306 340.8253,-585.0306"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="343.9754,-585.0306 340.8253,-576.0306 337.6754,-585.0307 343.9754,-585.0306"/>
+</g>
+<!-- tun2socks -->
+<g id="node5" class="node">
+<title>tun2socks</title>
+<path fill="#eafff0" stroke="#666666" d="M379.1769,-396C379.1769,-396 302.0633,-396 302.0633,-396 296.0633,-396 290.0633,-390 290.0633,-384 290.0633,-384 290.0633,-372 290.0633,-372 290.0633,-366 296.0633,-360 302.0633,-360 302.0633,-360 379.1769,-360 379.1769,-360 385.1769,-360 391.1769,-366 391.1769,-372 391.1769,-372 391.1769,-384 391.1769,-384 391.1769,-390 385.1769,-396 379.1769,-396"/>
+<text text-anchor="middle" x="340.6201" y="-381.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">tun2socks</text>
+<text text-anchor="middle" x="340.6201" y="-368.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">(Userspace VPN)</text>
+</g>
+<!-- AndroidProxy&#45;&gt;tun2socks -->
+<g id="edge4" class="edge">
+<title>AndroidProxy-&gt;tun2socks</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M340.8253,-539.7501C340.8253,-539.7501 340.8253,-405.0306 340.8253,-405.0306"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="343.9754,-405.0306 340.8253,-396.0306 337.6754,-405.0307 343.9754,-405.0306"/>
+</g>
+<!-- VPN -->
+<g id="node6" class="node">
+<title>VPN</title>
+<path fill="#fff0f6" stroke="#666666" d="M377.5327,-216C377.5327,-216 303.7075,-216 303.7075,-216 297.7075,-216 291.7075,-210 291.7075,-204 291.7075,-204 291.7075,-192 291.7075,-192 291.7075,-186 297.7075,-180 303.7075,-180 303.7075,-180 377.5327,-180 377.5327,-180 383.5327,-180 389.5327,-186 389.5327,-192 389.5327,-192 389.5327,-204 389.5327,-204 389.5327,-210 383.5327,-216 377.5327,-216"/>
+<text text-anchor="middle" x="340.6201" y="-194.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">VPN App Tunnel</text>
+</g>
+<!-- tun2socks&#45;&gt;VPN -->
+<g id="edge5" class="edge">
+<title>tun2socks-&gt;VPN</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M340.8253,-359.7501C340.8253,-359.7501 340.8253,-225.0306 340.8253,-225.0306"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="343.9754,-225.0306 340.8253,-216.0306 337.6754,-225.0307 343.9754,-225.0306"/>
+</g>
+<!-- Internet -->
+<g id="node7" class="node">
+<title>Internet</title>
+<path fill="#f6f6f6" stroke="#666666" d="M355.6201,-36C355.6201,-36 325.6201,-36 325.6201,-36 319.6201,-36 313.6201,-30 313.6201,-24 313.6201,-24 313.6201,-12 313.6201,-12 313.6201,-6 319.6201,0 325.6201,0 325.6201,0 355.6201,0 355.6201,0 361.6201,0 367.6201,-6 367.6201,-12 367.6201,-12 367.6201,-24 367.6201,-24 367.6201,-30 361.6201,-36 355.6201,-36"/>
+<text text-anchor="middle" x="340.6201" y="-14.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#222222">Internet</text>
+</g>
+<!-- VPN&#45;&gt;Internet -->
+<g id="edge6" class="edge">
+<title>VPN-&gt;Internet</title>
+<path fill="none" stroke="#506070" stroke-width="1.2" d="M340.8253,-179.7501C340.8253,-179.7501 340.8253,-45.0306 340.8253,-45.0306"/>
+<polygon fill="#506070" stroke="#506070" stroke-width="1.2" points="343.9754,-45.0306 340.8253,-36.0306 337.6754,-45.0307 343.9754,-45.0306"/>
+</g>
+</g>
+</svg>
