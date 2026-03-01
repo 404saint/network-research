@@ -25,7 +25,7 @@ Key objectives:
 
 ## Architecture Diagram
 
-![Architecture Diagram](diagrams/architecture.png)
+![Architecture Diagram](diagrams/architecture.svg)
 
 **High-level flow:**
 
